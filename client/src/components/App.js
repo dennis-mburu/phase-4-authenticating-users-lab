@@ -27,12 +27,14 @@ function App() {
   return (
     <div className="App">
       <Header user={user} onLogout={handleLogout} />
+      {/* <Header user={user} onLogout={setUser} /> */}
       <Switch>
         <Route exact path="/articles/:id">
           <Article />
         </Route>
         <Route exact path="/login">
           <Login onLogin={handleLogin} />
+          {/* <Login onLogin={setUser} /> */}
         </Route>
         <Route exact path="/">
           <Home />
